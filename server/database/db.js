@@ -9,7 +9,7 @@ const pass = process.env.DB_PASSWORD;
 
 const Connection = () => {
     
-    const MONGODB_URI  = `mongodb+srv://${user}:${pass}@mern-todo.rfytcsa.mongodb.net/?retryWrites=true&w=majority`;
+    const MONGODB_URI  = process.env.MONGODB_URI;
     // const MONGODB_URI  =  'mongodb+srv://root:root@mern-todo.rfytcsa.mongodb.net/?retryWrites=true&w=majority'
 
     mongoose.connect(MONGODB_URI, { useNewUrlParser: true});
