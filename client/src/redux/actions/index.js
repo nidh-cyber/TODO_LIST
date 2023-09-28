@@ -4,7 +4,7 @@ import { GETALL_TODO } from './type';
 import { TOGGLE_TODO, UPDATE_TODO, DELETE_TODO, TOGGLE_TAB } from './type';
 
 
-// const API_URL = 'http://localhost:8000';w
+const API_URL = process.env.REACT_APP_API_URL;
 
 export const addNewTodo =  (data) => async (dispatch) => {
     try{
